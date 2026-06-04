@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    user-select: none;
+}
+
+/* Shared Buttons */
+
+.calc-btn,
+.number-btn{
+    height: 70px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .15s ease;
+    position: relative;
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.25),
+        inset 0 1px 1px rgba(255,255,255,.15);
+
+    transform: translateY(0);
+}
+
+/* Number Buttons */
+
+.number-btn{
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,.08);
+}
+
+.number-btn:hover{
+    transform: translateY(-3px);
+    background: rgba(255,255,255,.14);
+}
+
+/* Click Animation */
+
+.calc-btn:active,
+.number-btn:active{
+    transform: translateY(5px) scale(.97);
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.2),
+        inset 0 3px 6px rgba(0,0,0,.3);
+}
+
+/* Fancy Glow */
+
+.shape{
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* Input Focus */
+
+.num:focus{
+    border-color: rgba(99,102,241,.7);
+    box-shadow:
+        0 0 0 4px rgba(99,102,241,.2),
+        inset 0 2px 8px rgba(0,0,0,.4);
+}
+
+/* Responsive */
+
+@media(max-width:480px){
+
+    .calc-btn,
+    .number-btn{
+        height: 60px;
+        font-size: 1.1rem;
+    }
+
+    .num{
+        height: 75px !important;
+        font-size: 2rem !important;
+    }
+
+}
