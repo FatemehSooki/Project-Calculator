@@ -52,7 +52,7 @@ The main objective of this project was to combine front-end development fundamen
 - Fatemeh Sooki
 - Role - Frontend
 
-- Created - 2026-06-05
+- Created - 2026-06-13
 
 - Mentor: [Parsa Ghorbanian](https://www.instagram.com/parsa_ghorbanian_web?igsh=MXQydDAxMW05ZjgyYg==)
 
